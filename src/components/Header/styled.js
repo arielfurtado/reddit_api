@@ -15,6 +15,7 @@ export const Header = styled.header`
 export const Title = styled.h1`
     font-weight: 700;
     font-size: 2.8rem;
+    color: #fff;
     strong {
         color: var(--highlightColor);
     }

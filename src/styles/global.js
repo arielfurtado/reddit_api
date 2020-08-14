@@ -14,12 +14,15 @@ const GlobalStyles = createGlobalStyle`
   figure, figcaption, footer, header, hgroup,
   menu, nav, output, ruby, section, summary,
   time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    font: inherit;
+    color: inherit;
+    margin: 0px;
+    padding: 0px;
   }
   article, aside, details, figcaption, figure,
   footer, header, hgroup, menu, nav, section {
@@ -51,7 +54,7 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1;
     font-size: 1rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --primaryColor: #fff;
+    --primaryColor: #4d4d4d;
     --highlightColor: #61dafb;        
     color: var(--primaryColor);
   }

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.section`
-    max-width: 960px;
-    margin: 0 auto;
+ max-width: 960px;
+ margin: 0 auto;
+ padding-bottom: 50px;
 `;

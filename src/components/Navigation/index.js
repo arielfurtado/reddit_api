@@ -1,12 +1,24 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import * as S from './styled';
 
-const Nav = () => (
-    <S.Wrapper>
-        <S.Button>Hot</S.Button>
-        <S.Button>News</S.Button>
-        <S.Button>Rising</S.Button>
-    </S.Wrapper>
-)
+const Nav = ({ handle, active }) => (
+ <S.Wrapper>
+  <S.Button onClick={() => handle('hot')} isActive={active === 'hot'}>
+   Hot
+  </S.Button>
+  <S.Button onClick={() => handle('new')} isActive={active === 'new'}>
+   News
+  </S.Button>
+  <S.Button onClick={() => handle('rising')} isActive={active === 'rising'}>
+   Rising
+  </S.Button>
+ </S.Wrapper>
+);
 
-export default Nav
+Nav.propTypes = {
+ handle: PropTypes.string.isRequired,
+ activeItem: PropTypes.string.isRequired,
+};
+
+export default Nav;
